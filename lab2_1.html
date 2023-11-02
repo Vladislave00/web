@@ -7,43 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="main">
-        <div class="container">
-            <form action="https://httpbin.org/post" method="post">
+    <div class = "wrapper">
+        <header class="header">
+            <div class="header__title">Моя страница</div>
+            <nav class="header__nav nav">
+                <ul class="nav__body">
+                    <li class="nav__item"><a class="nav__link" href="lab1.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Достижения</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Обратная связь</a></li>
+                    <li class="nav__item"><a class="nav__link" href="lab2_2.html">Авторизация</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container">
+                <form action="https://httpbin.org/post" method="post">
 
-                <label for="name">ФИО</label>
-                <input type="text" id="name" name="user_name" placeholder="Иванов Иван Иванович"><br>
-                
-                <label for="mail">Email</label>
-                <input type="email" id="mail" name="user_email"><br>
-                
-                <label for="password">Пароль</label>
-                <input type="password" id="password" name="user_password"><br>
-                
-                <label>Откуда о нас узнали?</label><br>
-                <input type="radio" id="friend" name="from_where">
-                <label for="friend" class="light">От друга</label><br>
+                    <label for="name">ФИО</label>
+                    <input type="text" id="name" name="user_name" placeholder="Иванов Иван Иванович"><br>
+                    
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="user_email"><br>
+                    
+                    <label>Откуда о нас узнали?</label><br>
+                    <input type="radio" id="friend" name="from_where">
+                    <label for="friend" class="light">От друга</label><br>
 
-                <input type="radio" id="adv" name="from_where">
-                <label for="adv" class="light">Наткнулись на рекламу</label><br>
+                    <input type="radio" id="adv" name="from_where">
+                    <label for="adv" class="light">Наткнулись на рекламу</label><br>
 
-                <label for="type">Укажите тип обращения</label><br>
-                <select id="type" name="student_courses">
-                    <option value="report">Жалоба</option>
-                    <option value="offer">Предложение</option>
-                </select><br>
+                    <label for="type">Укажите тип обращения</label><br>
+                    <select id="type" name="student_courses">
+                        <option value="report">Жалоба</option>
+                        <option value="offer">Предложение</option>
+                    </select><br>
 
-                <label for="message">Ваше сообщение</label><br>
-                <textarea id="message" name="message"></textarea><br>
+                    <label for="message">Ваше сообщение</label><br>
+                    <textarea id="message" name="message"></textarea><br>
 
-                <label>Согласие на обработку персональных данных</label>
-                <input type="checkbox" id="cb1" value="interest_engineering" name="user_interest"><br>
-                <input type="file" id="file" name="user_file" ><br>
+                    <label>Согласие на обработку персональных данных</label>
+                    <input type="checkbox" id="cb1" value="interest_engineering" name="user_interest"><br>
+                    <input type="file" id="file" name="user_file" ><br>
 
-                <button type="submit">Submit</button>
+                    <button type="submit">Submit</button>
 
-            </form>
-        </div>
-    </main>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__info">
+                <p class="info__mail">Почта: vladislave00@yandex.ru</p>
+                <p class="info__phone">Телефон: +79773387701</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
