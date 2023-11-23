@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-bottom: 125px;
+    margin-top: 110px;
+    background-color: gainsboro;
+}
+
+header {
+    height: 90px;
+    top: 0;
+    display: block;
+}
+
+header,
+footer {
+    position: fixed;
+    background-color: rgb(169, 111, 109);
+    width: 100%;
+}
+
+.listHeader {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title,
+.listHeader {
+    color: antiquewhite;
+}
+
+header div {
+    height: 2.5em;
+    width: 100%;
+}
+
+#title {
+    text-decoration: overline;
+    font-size: 20px;
+    padding-top: 6px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.listHeader li {
+    display: inline;
+    margin-left: 4em;
+}
+
+.listHeader li a {
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.listHeader li a:visited {
+    color: bisque;
+}
+
+.currentPage {
+    color: darkgray;
+    background-color: lightslategrey;
+    /* background-color: antiquewhite; */
+}
+
+.listHeader li a:hover {
+    color: black;
+    background-color: antiquewhite;
+}
+
+main {
+    font-size: 14pt;
+}
+
+main div div {
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+main div div ul {
+    margin-bottom: 2%;
+    text-align: left;
+    display: inline-block;
+}
+
+main div article h1,
+main div article h2 {
+    margin-bottom: 1%;
+}
+
+main div article {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main div article p {
+    text-align: justify;
+    margin-bottom: 4%;
+}
+.image2 {
+    display: block;
+    margin: 2% auto 0;
+    /* Устанавливаем отступы слева и справа на auto для центрирования */
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.image {
+    float: right;
+    margin-top: 1%;
+    margin-left: 2%;
+    max-width: 600px;
+    max-height: 600px;
+    margin-bottom: 1%;
+    /* Устанавливаем ширину на 400 пикселей */
+    /* Автоматически определяем высоту, чтобы сохранить пропорции */
+}
+
+main div p {
+    display: block;
+}
+
+footer {
+    position: fixed;
+    color: bisque;
+    padding: 1em;
+    bottom: 0;
+}
+
+footer ul {
+    text-shadow: 1px;
+    padding-top: 1em;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer li a {
+    text-decoration: none;
+    margin-right: 2%;
+    transition: color 0.3s;
+    color: burlywood;
+}
+
+#timeLabel {
+    margin-right: 3%;
+    float: right;
+}
+
+footer li a:hover {
+    color: azure;
+}
