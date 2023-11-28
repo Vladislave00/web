@@ -28,10 +28,10 @@
             <tr><th>Название модели</th><th>Цена</th><th>Краткое описание</th><th>Фото</th></tr>
             <?php
             try {
-                define('DB_HOST', 'std-mysql.ist.mospolytech.ru:3306/std_2294_rk'); //Адрес
-                define('DB_USER', 'std_2294_rk'); //Имя пользователя
-                define('DB_PASSWORD', 'vladikkk848'); //Пароль
-                define('DB_NAME', 'std_2294_rk'); //Имя БД
+                define('DB_HOST', 'localhost'); //Адрес
+                define('DB_USER', 'vladislave_rk'); //Имя пользователя
+                define('DB_PASSWORD', 'Vladikkk848'); //Пароль
+                define('DB_NAME', 'vladislave_rk'); //Имя БД
                 $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
                 $link = mysqli_connect(DB_HOST,DB_USER, DB_PASSWORD);
                 mysqli_select_db($link, DB_NAME);
