@@ -64,3 +64,6 @@ label{
     display: flex;
     gap: 30px
 }
+.form-group {
+    margin: auto;
+}

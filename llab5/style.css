@@ -21,7 +21,6 @@ header {
 .listHeader {
     margin-top: 10px;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header div {
@@ -47,25 +46,17 @@ header div {
 }
 
 .listHeader li a {
-    transition: color 0.3s;
-    text-decoration: none;
-}
-.listHeader li a:visited {
-    color: rgb(193, 193, 193);
-}
-.currentPage {
-    color: darkgray;
-    background-color: lightslategrey;
-    /* background-color: antiquewhite; */
-    
-}
-.listHeader li a:hover {
-    color: rgb(143, 143, 143);
-    background-color: antiquewhite;
+    color: aliceblue;
 }
 
+.currentPage {
+    color: darkgray;
+    background-color: lightslategrey;    
+}
+
+
 p {
-    color: rgb(232, 232, 232);
+    color: rgb(0, 0, 0);
     text-align: justify;
 }
 
@@ -76,11 +67,11 @@ p {
 }
 .container {
     word-wrap: break-word;
-    background-color:  rgb(128, 128, 128);
+    background-color:  rgb(191, 191, 191);
     width: 25%;
     margin: 0 auto;
     margin-bottom: 2em;
-    border: 2px solid lightslategrey;
+    border: 2px solid rgb(29, 29, 29);
     border-radius: 10px;
     padding: 10px;
 }
@@ -90,4 +81,20 @@ p {
     height: 500px;
     display: block; /* Чтобы изображения выравнивались по центру горизонтально */
     margin: 0 auto; /* Чтобы изображения выравнивались по центру вертикально */
+}
+
+table {
+    background: #ffffff;
+    margin: 40px;
+    color: #000000;
+    border-collapse: collapse;
+}
+
+th {
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: 700;
+}
+td {
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
 }

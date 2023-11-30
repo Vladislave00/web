@@ -14,17 +14,33 @@
             <h1 id="title"> Лабораторная 3 </h1>
         </div>
         <div>
-            <ul class="listHeader">
+        <ul class="listHeader">
             <li>
-        <a href="index.php">Page1</a>
-    </li>
-    <li>
-        <a href="page2.php" <?php $current_page2=true; if ($current_page2) echo 'class="currentPage"'; ?>>Page2</a>
-    </li>
-    <li>
-        <a href="page3.php">Page3</a>
-    </li>
-            </ul>
+                <a href=<?php
+                    $name = 'Page1'; 
+                    $link = 'index.php ';
+                    echo $link;
+                    ?>><?php echo $name ?>
+                </a>
+            </li>
+            <li>
+                <a href=<?php $current_page2 = true; 
+                    $name = 'Page2'; 
+                    $link = 'page2.php';
+                    if ($current_page2) echo $link;
+                    echo 'class="currentPage"';
+                    ?>><?php echo $name ?>
+                </a>
+            </li>
+            <li>
+                <a href=<?php
+                    $name = 'Page3'; 
+                    $link = 'page3.php';
+                    echo $link;
+                    ?>><?php echo $name ?>
+                </a>
+            </li>
+        </ul>
         </div>
     </header>
     <main>

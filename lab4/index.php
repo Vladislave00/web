@@ -2,7 +2,7 @@
 include('header.html');
 $name = '';
 $email = '';
-$agreement = '';
+$agreement = 'no';
 $radioButton = '';
 if (isset($_GET['name'])) {
     $name = $_GET['name'];
@@ -48,7 +48,7 @@ if (isset($_GET['name'])) {
                     <textarea id="message" name="message"></textarea><br>
 
                     <label>Согласие на обработку персональных данных</label>
-                    <input checked="<?php if ($agreement = 'yes') true ?>" type="checkbox" id="agreement"  name="agreement" value="yes" required><br>
+                    <input <?php if ($agreement == 'yes') echo ('checked') ?> type="checkbox" id="agreement"  name="agreement" value="yes" required><br>
                     
                     <label class="form-label" for="attachment">Файл для отправки</label><br>
                     <input type="file" name="attachment" id="attachment"><br>

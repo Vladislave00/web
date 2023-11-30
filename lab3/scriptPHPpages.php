@@ -25,7 +25,4 @@ if ($seconds % 2 == 0) {
 // Форматируем текущую дату и время
 $currentDateTime = date('d.m.Y в H:i:s');
 $numElements = rand(1, 10);
-// // Выводим надпись в HTML
-// $nameImage1 ='pic'.(date('s') % 2+1).'.jpg';
-// $nameImage2 ='pic'.(date('s') % 2+1).'.jpg';
 ?>

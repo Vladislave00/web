@@ -1,8 +1,3 @@
-<?php 
-include "connectToDB.php";
-$result = mysqli_query($mysqli, "SELECT * FROM `images`");
-?>
-</php>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,25 +26,28 @@ $result = mysqli_query($mysqli, "SELECT * FROM `images`");
     </header>
     <main>
         <div class="box">
-            
-            <?php
-            // echo $result;
-            while ($name = mysqli_fetch_assoc($result)) {
-
-                $query = "SELECT * FROM termins ORDER BY RAND() LIMIT 1";
-                $termResult = mysqli_query($mysqli, $query);
-                $term = mysqli_fetch_assoc($termResult);
+            <?php 
+            include "connectToDB.php";
+            $result = mysqli_query($mysqli, "SELECT * FROM `images`");
             ?>
-                <div class="filters__img">
-                    <img title="<?php echo $name['path']; ?>" src="<?php echo $name['path']; ?>" />
+            </php>
+            <table>
+            <?php 
+            $sql = 'SELECT * FROM termins';
+            $result = mysqli_query($mysqli, $sql);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<tr><td>{$row['termin']}</td>" . "<td>{$row['description']}</td></tr>";
+            } ?>
+            </table>
 
-                    <div class="container">
-                        <p><?php echo $term['termin']; ?> - это <?php echo $term['description']; ?></p>
-                    </div>
-                </div>
-            <?php
-            }
-            ?>
+            <table>
+            <?php 
+            $sql = 'SELECT * FROM images';
+            $result = mysqli_query($mysqli, $sql);
+            while ($row = mysqli_fetch_array($result)) {
+                echo '<div class="filters__img">' . '<img src="'. $row['path'] .'" alt="">' . '</div>';
+            } ?>
+            </table>
         </div>
         </div>
     </main>
