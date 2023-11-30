@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gainsboro;
+    margin-top: 95px;
+} 
+
+
+header {
+    height: 90px;
+    top: 0;
+    display: block;
+    position: fixed;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+
+.listHeader {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header div {
+    height: 2.5em;
+    width: 100%;
+}
+
+#title,
+.listHeader {
+    color: rgb(255, 255, 255);
+}
+
+#title {
+    font-size: 20px;
+    padding-top: 6px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.listHeader li {
+    display: inline;
+    margin-left: 4em;
+}
+
+.listHeader li a {
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.listHeader li a:visited {
+    color: rgb(193, 193, 193);
+}
+.currentPage {
+    color: darkgray;
+    background-color: lightslategrey;
+    /* background-color: antiquewhite; */
+    
+}
+.listHeader li a:hover {
+    color: rgb(143, 143, 143);
+    background-color: antiquewhite;
+}
+
+p {
+    color: rgb(232, 232, 232);
+    text-align: justify;
+}
+
+
+.form-additional {
+    margin-right: 1%;
+    font-weight: bold;
+}
+.container {
+    word-wrap: break-word;
+    background-color:  rgb(128, 128, 128);
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border: 2px solid lightslategrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+.filters__img img {
+    padding-bottom: 2em;    
+    width: 600px;
+    height: 500px;
+    display: block; /* Чтобы изображения выравнивались по центру горизонтально */
+    margin: 0 auto; /* Чтобы изображения выравнивались по центру вертикально */
+}
