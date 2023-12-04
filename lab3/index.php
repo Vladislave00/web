@@ -5,7 +5,7 @@
     <?php require 'scriptPHPpages.php'    ?>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title><?php echo $pageTitle2; ?></title>
+    <title><?php echo $pageTitle1; ?></title>
 </head>
 
 <body>
@@ -19,8 +19,9 @@
                 <a href=<?php $current_page1 = true; 
                     $name = 'Page1'; 
                     $link = 'index.php ';
-                    if ($current_page1) echo $link;
-                    echo 'class="currentPage"'; ?>><?php echo $name ?>
+                    echo $link;
+                    if ($current_page1) echo 'class="currentPage"';
+                    ?>><?php echo $name ?>
                 </a>
             </li>
             <li>

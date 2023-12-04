@@ -26,9 +26,9 @@
             <li>
                 <a href=<?php $current_page2 = true; 
                     $name = 'Page2'; 
-                    $link = 'page2.php';
-                    if ($current_page2) echo $link;
-                    echo 'class="currentPage"';
+                    $link = 'page2.php ';
+                    echo $link;
+                    if ($current_page2) echo 'class="currentPage"';
                     ?>><?php echo $name ?>
                 </a>
             </li>

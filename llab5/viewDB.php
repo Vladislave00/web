@@ -28,7 +28,6 @@
         <div class="box">
             <?php 
             include "connectToDB.php";
-            $result = mysqli_query($mysqli, "SELECT * FROM `images`");
             ?>
             </php>
             <table>
@@ -45,7 +44,7 @@
             $sql = 'SELECT * FROM images';
             $result = mysqli_query($mysqli, $sql);
             while ($row = mysqli_fetch_array($result)) {
-                echo '<div class="filters__img">' . '<img src="'. $row['path'] .'" alt="">' . '</div>';
+                echo '<div class="filters__img">' . '<img src="'. $row['path'] . '" title="'. $row['path'] . '" alt="">' . '</div>';
             } ?>
             </table>
         </div>

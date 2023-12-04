@@ -5,7 +5,7 @@
     <?php require 'scriptPHPpages.php'    ?>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title><?php echo $pageTitle2; ?></title>
+    <title><?php echo $pageTitle3; ?></title>
 </head>
 
 <body>
@@ -34,9 +34,10 @@
             <li>
                 <a href=<?php $current_page3 = true; 
                     $name = 'Page3'; 
-                    $link = 'page3.php';
-                    if ($current_page3) echo $link;
-                    echo 'class="currentPage"';
+                    $link = 'page3.php ';
+                    echo $link;
+                    if ($current_page3) echo 'class="currentPage"';
+                    
                     ?>><?php echo $name ?>
                 </a>
             </li>
