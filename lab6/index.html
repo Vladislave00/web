@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="func.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h1>Лабораторная 6</h1>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <div>
+                <img title="" />
+
+                <div class="container">
+                    <div class="divMainForm">
+                        <div class="input-group">
+                            <label class="left-label" for="inputX">Возвести x в степень y</label>
+                            <input type="text" id="inputX" name="inputX">
+                            <input type="text" id="inputY" name="inputY">
+                            <label id="labelForPower" class="right-label">Ответ:</label>
+                        </div>
+                        <button onclick="clickCalcPower()">Выполнить</button>
+                        <div class="input-group">
+                            <label class="left-label" for="inputA">Нахождение НОД a b</label>
+                            <input type="text" id="inputA">
+                            <input type="text" id="inputB">
+                            <label id="labelNOD" class="right-label">Ответ:</label>
+                        </div>
+                        <button onclick="clickFindNOD()">Выполнить</button>
+                        <div class="input-group">
+                            <label class="left-label">Наименьшая цифра x</label>
+                            <input type="text" id="inputTheSmallest">
+                            <label id="labelTheSmallestDigit" class="right-label">Ответ:</label>
+                        </div>
+                        <button onclick="clickFindTheSmallestDigit()">Выполнить</button>
+                        <div class="input-group">
+                            <label class="left-label">Pluralization</label>
+                            <input type="text" id="inputPluralization">
+                            <label id="labelPluralization" class="right-label">Ответ:</label>
+                        </div>
+                        <button onclick="clickPluralization()">Выполнить</button>
+                        <div class="input-group">
+                            <label class="left-label">Числа Фибоначчи</label>
+                            <input type="text" id="inputFib">
+                            <label id="labelFib" class="right-label">Ответ:</label>
+                        </div>
+                        <button onclick="clickFib()">Выполнить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>
