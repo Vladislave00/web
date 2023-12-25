@@ -9,6 +9,7 @@ if (isset($_GET['name'])) {
     $email = $_GET['email'];
     $agreement = $_GET['agreement'];
     $radioButton = $_GET['selector'];
+
 }
 ?>
 
@@ -32,11 +33,11 @@ if (isset($_GET['name'])) {
                     <input type="email" id="email" name="email" value="<?php echo $email ?>" placeholder="example@gmail.com"><br>
                     
                     <label>Откуда о нас узнали?</label><br>
-                    <input checked='<?php if($radioButton = 'friend') true ?>' type="radio" id="selector" name="selector">
-                    <label for="friend" class="light">От друга</label><br>
+                    <input <?php if($radioButton == "friend") echo "checked" ?> type="radio" id="selector" name="selector" value="friend">
+                    <label for="selector" class="label-selector">От друга</label><br>
 
-                    <input checked='<?php if($radioButton = 'ad') true ?>' type="radio" id="selector" name="selector">
-                    <label for="adv" class="light">Наткнулись на рекламу</label><br>
+                    <input <?php if($radioButton == "ad") echo "checked" ?> type="radio" id="selector" name="selector" value="ad">
+                    <label for="selector" class="label-selector">Наткнулись на рекламу</label><br>
 
                     <label for="type">Укажите тип обращения</label><br>
                     <select id="type" name="category">

@@ -71,12 +71,12 @@ function clickPluralization() {
     document.getElementById("labelPluralization").textContent = "Ответ:" + Pluralization(x);
 }
 function Pluralization(x) {
-    let word = 'записей';
+    let word = 'В результате выполнения запроса было найдено ' +x+ ' записей';
     if (x % 10 === 1 && x % 100 !== 11) {
-        word = 'запись';
+        word = 'В результате выполнения запроса была найдена ' +x+ ' запись';
     }
     else if (x % 10 >= 2 && x % 10 <= 4 && (x % 100 < 10 || x % 100 >= 20)) {
-        word = 'записи';
+        word = 'В результате выполнения запроса были найдены ' +x+ ' записи';
     }
     return word;
 }

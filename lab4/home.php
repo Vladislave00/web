@@ -29,6 +29,6 @@ include('header.html');
             }
             ?>
         </div>
-        <a class="btn" href="index.php?name=<?php echo $_POST['name']; ?>&email=<?php echo $_POST['email']; ?>&agreement=<?php echo $_POST['agreement']; ?>&selector=<?php echo $_POST['agreement']; ?>">Заполнить снова</a>
+        <a class="btn" href="index.php?name=<?php echo $_POST['name']; ?>&email=<?php echo $_POST['email']; ?>&agreement=<?php echo $_POST['agreement']; ?>&selector=<?php echo $_POST['selector']; ?>">Заполнить снова</a>
     </form>
 </div>

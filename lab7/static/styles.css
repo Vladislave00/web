@@ -1,0 +1,64 @@
+body {
+    background-color: gainsboro;
+    align-items: center;
+}
+
+.calc-container {
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25), 0px 3px 4px 0px rgba(0, 0, 0, 0.12);
+    max-inline-size: 14rem;
+    padding: 10px;
+    background-color: lightslategrey;
+    margin: 0 auto;
+}
+.screen {
+    height: 1em;
+    font-family: 'Calculator', sans-serif;
+    background: hsl(202, 11%, 29%);
+    color: hsl(255, 100%, 100%);
+    font-size: 2rem;
+    text-align: end;
+    margin-bottom: 2%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2px;
+}
+
+.key-digit .key-operation .key-result .key-clear {
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1.25rem;
+    padding-inline-start: 1.25rem;
+    font-size: 3rem;
+}
+
+.key-digit {
+    font-size: 18pt;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+}
+
+.key-digit:hover {
+    background-color: #337a36;
+}
+
+.key-operation {
+    font-size: 16pt;
+    border: none;
+    background-color: chocolate;
+}
+
+.key-operation:hover {
+    border: none;
+    background-color: rgb(171, 88, 28);
+}
+
+.key-result {
+    font-size: 18pt;
+    grid-column: 4 / 5;
+    grid-row: 1 / span 6;
+}
